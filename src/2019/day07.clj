@@ -5,8 +5,7 @@
    [clojure.string :as str]
    [clojure.core.async
     :as async
-    :refer [>! <! >!! <!! go chan buffer close! thread put!
-            alts! alts!! timeout]]))
+    :refer [>!! <!! go chan ]]))
 
 (def data
   (->> "2019/day07"
