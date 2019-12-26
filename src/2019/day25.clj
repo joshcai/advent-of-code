@@ -4,7 +4,7 @@
    [clojure.string :as str]
    [clojure.core.async
     :as async
-    :refer [>!! <!! >! <! go-loop chan sliding-buffer]]))
+    :refer [>!! <! go-loop chan]]))
 
 (def data
   (->> "2019/day25"
@@ -51,7 +51,6 @@
 
 (defn pair-with-index [xs]
   (zipmap (iterate inc 0) xs))
-
 
 (defn convert-to-str [xs]
    (apply str (map #(char %) (filter #(< % 1000) xs))))

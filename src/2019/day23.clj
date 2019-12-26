@@ -77,8 +77,7 @@
             (recur (assoc xs (get-param-location xs (+ idx 3) p3 base) r) (+ idx 4) base output))
         2 (let [r (get-result xs idx * parameters base)]
             (recur (assoc xs (get-param-location xs (+ idx 3) p3 base) r) (+ idx 4) base output))
-        3 (let [raw-input (<! input-chan)
-                input (if (nil? raw-input) -1 raw-input)]
+        3 (let [input (<! input-chan)]
             (case input
               kill-signal 0
               -1 (do
