@@ -13,15 +13,15 @@ func partOne(input []int) int {
 }
 
 func twoSum(input []int, target int) []int {
-	 m := make(map[int]bool)
-	 for _, num := range input {
-		 complement := target - num
-		 if m[complement] {
-			 return []int{num, complement}
-		 }
-		 m[num] = true
-	 }
-	 return nil
+	m := make(map[int]bool)
+	for _, num := range input {
+		complement := target - num
+		if m[complement] {
+			return []int{num, complement}
+		}
+		m[num] = true
+	}
+	return nil
 }
 
 func partTwo(input []int) int {

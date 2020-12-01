@@ -1,12 +1,12 @@
 package day01
 
 import (
-	"fmt"
-	"testing"
 	"bufio"
+	"fmt"
 	"log"
 	"os"
 	"strconv"
+	"testing"
 )
 
 func ReadInts(path string) []int {
