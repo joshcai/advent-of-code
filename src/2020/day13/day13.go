@@ -45,26 +45,6 @@ type busInfo struct {
 	idx int
 }
 
-func gcd(a, b int) int {
-	if b == 0 {
-		return a
-	}
-	return gcd(b, a%b)
-}
-
-func lcm(a, b int) int {
-	return a / gcd(a, b) * b
-}
-
-func satisfies(buses []busInfo, start int) bool {
-	for _, bus := range buses {
-		if (start+bus.idx)%bus.bus != 0 {
-			return false
-		}
-	}
-	return true
-}
-
 func partTwo(lines []string) int {
 	if len(lines) != 2 {
 		log.Fatalf("invalid number of lines: %v", lines)
