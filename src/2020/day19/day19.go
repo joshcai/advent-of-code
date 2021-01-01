@@ -58,12 +58,6 @@ func generatePossible(m map[int][][]int, start map[int]string) map[int][]string 
 			possible = append(possible, k)
 		}
 		cache[r] = possible
-		// if r == 8 || r == 42 || r == 31 {
-		// 	for _, z := range possible {
-		// 		fmt.Println(len(z))
-		// 	}
-		// 	fmt.Printf("%d %v\n", r, possible)
-		// }
 		return possible
 	}
 	dfs(0)
