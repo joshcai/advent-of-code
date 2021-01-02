@@ -1,4 +1,4 @@
-package day20
+package day21
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ func ReadStrings(path string) []string {
 func TestPartOneExample(t *testing.T) {
 	inputs := ReadStrings("example_input")
 	got := partOne(inputs)
-	want := 20899048083289
+	want := 5
 	if got != want {
 		t.Errorf("got %v, want %v", got, want)
 	}
@@ -28,7 +28,7 @@ func TestPartOneExample(t *testing.T) {
 func TestPartTwoExample(t *testing.T) {
 	inputs := ReadStrings("example_input")
 	got := partTwo(inputs)
-	want := 273
+	want := "mxmxvkd,sqjhc,fvjkl"
 	if got != want {
 		t.Errorf("got %v, want %v", got, want)
 	}
@@ -45,5 +45,5 @@ func TestPartTwo(t *testing.T) {
 	inputs := ReadStrings("input")
 
 	actual := partTwo(inputs)
-	fmt.Printf("part 2: %d\n", actual)
+	fmt.Printf("part 2: %s\n", actual)
 }
