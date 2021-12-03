@@ -37,8 +37,8 @@ fun part2(file: String): Int {
 }
 
 fun main() {
-    check(part1("resources/2021/day01/test") == 7)
-    println(part1("resources/2021/day01/input"))
-    check(part2("resources/2021/day01/test") == 5)
-    println(part2("resources/2021/day01/input"))
+    check(part1("test") == 7)
+    println(part1("input"))
+    check(part2("test") == 5)
+    println(part2("input"))
 }
