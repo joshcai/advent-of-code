@@ -22,7 +22,6 @@ def part2(name):
   lines = read_file(name)
   current = None
   final = 0
-  # counter += 0
   for line in lines:
     if not current:
       current = set(line)
