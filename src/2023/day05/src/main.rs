@@ -107,8 +107,7 @@ fn part2(input: &str) -> u64 {
                         next_nums.push(temp);
                     }
                 }
-                queue = next_queue.clone();
-                next_queue.clear();
+                queue = next_queue;
             }
             nums = next_nums;
             // Reset state for the next set of maps.
