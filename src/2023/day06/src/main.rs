@@ -9,8 +9,7 @@ fn num_ways(t: u64, d: u64) -> u64 {
     (0..=t)
         .map(|x| (t-x) * x)
         .filter(|x| x > &d)
-        .map(|_x| 1)
-        .sum::<u64>()
+        .count() as u64
 }
 
 #[cfg(test)]
