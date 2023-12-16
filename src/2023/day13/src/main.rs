@@ -77,7 +77,6 @@ fn val2(input: &mut Vec<Vec<char>>) -> u64 {
             input[i][j] = swap(prev_char);
             let v = val(input.clone(), old_val);
             if v > 0 && v != old_val {
-                println!("{}", v);
                 return v
             }
             input[i][j] = prev_char;
