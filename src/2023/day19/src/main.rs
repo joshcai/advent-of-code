@@ -30,7 +30,6 @@ fn get_rules(rules: &Vec<String>) -> HashMap<String, Rule> {
             let op = cond.chars().nth(1).unwrap();
             let name = cond.chars().nth(0).unwrap();
             let cond_parts = cond.split(&[':', '<', '>'][..]).collect::<Vec<_>>();
-            // println!("{:?}", cond_parts);
             let value = cond_parts[1].parse::<u64>().unwrap();
             let dest = cond_parts[2];
             conditions.push(Condition { name, op, value, dest: dest.to_string() });
